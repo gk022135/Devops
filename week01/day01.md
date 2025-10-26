@@ -106,22 +106,24 @@ Rolling Updates: The update is gradually pushed out to all users.
 
 # How to Reduce the Cost of High Bandwidth Usage
 
-Answer:
-Use caching and Amazon CloudFront, which is a CDN (Content Delivery Network).
+> [!NOTE]
+> Answer: Use caching and Amazon CloudFront, which is a CDN (Content Delivery Network).
 
-Story
+### Story
 
 Suppose a video is stored in an Amazon S3 bucket located in New York, and a user in a remote village in India tries to stream that video.
 Because the data has to travel such a long distance, the bandwidth usage is high and latency increases.
 
-Solution
+### Solution
 
 To reduce bandwidth costs and latency, the video should be transmitted from a location closer to the user.
 By using a CDN like Amazon CloudFront, the video is cached at a nearby edge location. This ensures that when users in that region request the video, it is delivered quickly and efficiently.
 
-How It Works
+![Video Streaming changing](![alt text](image.png))
 
-CDNs maintain edge servers near users.
+### How It Works
+
+``` CDNs maintain edge servers near users.
 
 When a user requests a video for the first time, the CDN fetches it from the original server (e.g., the S3 bucket in New York).
 
@@ -129,9 +131,9 @@ The CDN then stores (caches) that video temporarily at the local edge server.
 
 For subsequent requests, the CDN serves the video directly from the local cache, reducing both bandwidth and latency.
 
-For better optimization, frequently accessed videos can be stored in a priority queue with timestamps and access frequency for smart caching decisions.
+For better optimization, frequently accessed videos can be stored in a priority queue with timestamps and access frequency for smart caching decisions. ```
 
-Benefits
+### Benefits
 
 Reduced bandwidth costs
 
