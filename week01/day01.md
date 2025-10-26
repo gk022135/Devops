@@ -102,7 +102,9 @@ Rolling Updates: The update is gradually pushed out to all users.
 3. Common Tools: Docker, Kubernetes, Ansible, Helm, ArgoCD.
 
 
-How to Reduce the Cost of High Bandwidth Usage
+---
+
+# How to Reduce the Cost of High Bandwidth Usage
 
 Answer:
 Use caching and Amazon CloudFront, which is a CDN (Content Delivery Network).
@@ -138,3 +140,5 @@ Lower latency and faster video delivery
 Improved user experience
 
 Optimized server load
+
+---
