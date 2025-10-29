@@ -1,7 +1,5 @@
 
 ---
-
-````markdown
 # Day 03 – DevOps
 
 ---
@@ -209,4 +207,3 @@ Its **open-source** philosophy, combined with **security**, **performance**, and
 Would you like me to:
 1. Add a **table of contents** at the top (for easy GitHub navigation)?  
 2. Or format it like a **course/lab README** (with sections for “Objective”, “Theory”, “Commands Used”, etc.)?
-```
